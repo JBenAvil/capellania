@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p class="lead">${curso.descripcion}</p>
                             <h3 class="text-primary">${curso.precio}</h3>
                             <a href="${linkCompraFinal}" class="whatsapp-btn btn-lg mt-3" target="_blank">Consultar por WhatsApp</a>
-                            <a href="../public/${cursoCategoria}.html" class="btn btn-secondary btn-lg mt-3 ms-2">Volver a ${cursoCategoria.charAt(0).toUpperCase() + cursoCategoria.slice(1)}</a>
+                            <a href="../details/${cursoCategoria}.html" class="btn btn-secondary btn-lg mt-3 ms-2">Volver a ${cursoCategoria.charAt(0).toUpperCase() + cursoCategoria.slice(1)}</a>
                         `;
                     } else {
                         productoInfo.innerHTML = '<p class="text-danger">Curso no encontrado.</p>';
