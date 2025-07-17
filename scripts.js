@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Mapeo de nombres de archivo a claves del JSON y títulos amigables
         const categoryConfig = {
-            'especialidades': { key: 'especialidad', title: 'Nuestras Especialidades', image: 'img/img-especialidades.jpg' },
+            'especialidad': { key: 'especialidad', title: 'Nuestras Especialidades', image: 'img/img-especialidades.jpg' },
             'cursos': { key: 'cursos', title: 'Nuestros Cursos', image: 'img/img-cursos.jpg' },
             'diplomados': { key: 'diplomados', title: 'Nuestros Diplomados', image: 'img/img-diplomados.jpg' },
             'titulos': { key: 'titulos', title: 'Nuestros Títulos', image: 'img/img-titulos.jpg' }
