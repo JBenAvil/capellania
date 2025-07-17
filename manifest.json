@@ -1,0 +1,11 @@
+{
+    "name": "A&G",
+    "icons": [
+      {
+        "src": "static/icon_capellania.png",
+        "type": "image/jpg",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  

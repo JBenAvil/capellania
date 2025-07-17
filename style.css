@@ -1,0 +1,153 @@
+body {
+  background-image: url(static/pergamine2.jpg);
+  background-size: cover; /* Escala la imagen para que cubra todo el elemento, recortando si es necesario */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Mantiene la imagen fija en relación con la ventana de visualización, útil para scroll */
+  background-position: center center; /* Centra la imagen en el body */
+  }
+
+.nav-icon-link {
+  /* Propiedades iniciales para la transición */
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Transición para la escala y el color del SVG */
+  display: inline-block; /* Necesario para que la transformación funcione correctamente */
+  text-decoration: none; /* Asegura que no haya subrayado en el enlace */
+  color: inherit; /* Hereda el color del padre si no está definido */
+}
+
+.nav-icon-link:hover {
+  transform: scale(1.1); /* Aumenta el tamaño en un 10% al pasar el mouse */
+}
+
+/* Estilo para el SVG */
+.nav-icon-link svg {
+  fill: #FFFFFF; /* Color inicial del SVG blanco */
+  transition: fill 0.3s ease-in-out; /* Transición para el color del SVG */
+}
+
+/* Estilo para el texto */
+.nav-icon-link .icon-text {
+  color: white; /* Color inicial del texto blanco */
+  transition: color 0.3s ease-in-out; /* Transición para el color del texto */
+}
+
+/* Estilos para el contenedor del botón */
+.button-container {
+  /* Usamos Flexbox para centrar el botón */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center;     /* Centra verticalmente si hubiera espacio vertical */
+  
+  /* Asegura que ocupe todo el ancho disponible del padre (card-body) */
+  width: 100%; 
+  
+  /* Puedes añadir un poco de padding superior si quieres separarlo del texto */
+  padding-top: 10px; 
+  box-sizing: border-box; /* Importante para que padding y border se incluyan en el ancho */
+}
+
+/* Estilos para el botón */
+.expand-button {
+  /* El botón se expandirá dentro del contenedor flex. 
+     'width: 100%' hará que ocupe todo el ancho del .button-container.
+     Si quieres un ancho máximo para que no sea demasiado grande, usa max-width.
+  */
+  width: 100%; 
+  max-width: 350px; /* Opcional: Limita el ancho máximo del botón para que no sea excesivamente largo */
+  
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 10px; /* Esquinas redondeadas */
+  
+  /* Transiciones suaves para los efectos hover */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  
+  text-align: center; /* Asegura que el texto dentro del botón esté centrado */
+  text-decoration: none; /* Elimina el subrayado si fuera un <a> */
+  display: block; /* Asegura que se comporte como un bloque para el width/max-width */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.expand-button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+/* Puedes añadir este estilo para visualizar mejor los límites del card-body durante el desarrollo */
+/* .card-body {
+  border: 1px dashed red; 
+} */
+
+
+
+  
+
+  .product-link {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+
+  .product-link:hover {
+    transform: scale(1.02);
+    background-color: #f0f0f0;
+  }
+
+  .circle-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #52d7ff;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  ul.list-unstyled {
+    padding-left: 0;
+  }
+
+  .whatsapp-btn {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #25D366;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #1ebe57;
+    text-decoration: none;
+  }
+  
+  .whatsapp-btn i {
+    font-size: 1.2rem;
+  }
+  
+
+  footer {
+    background-color: #000000;
+  }
+  
