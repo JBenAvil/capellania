@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         `;
 
                          // Construir el mensaje de WhatsApp dinámicamente
-                        const numeroWhatsapp = "56976603721"; // Tu número sin + ni espacios
+                        const numeroWhatsapp = "56952102773"; // Tu número sin + ni espacios
                         // Codifica el mensaje para la URL. encodeURIComponent es crucial.
                         const mensajeWhatsapp = encodeURIComponent(`Hola, quiero más información del curso ${curso.nombre}.`);
                         
